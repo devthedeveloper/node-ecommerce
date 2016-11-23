@@ -1,0 +1,21 @@
+<h2>Cars</h2>
+<p>View cars or <a href="edit.html">add</a> a car.</p>
+<% if (locals.flash) { %>
+    <p><%= flash %></p>
+<% } %>
+<ul>
+    <li class="header">
+        <span class="field">Color</span>
+        <span class="field">Model</span>
+        <span class="field">Actions</span>
+    </li>
+    <% for(var i=0; i<cars.length; i++) {%>
+            <li class="row">
+                <span class="field"><%= cars[i]['color'] %></span>
+                <span class="field"><%= cars[i]['model'] %></span>
+                <span class="field">
+                    <a href="<%= cars[i]._id %>" >cars</a>
+                </span>
+            </li>
+    <% } %>
+</ul>

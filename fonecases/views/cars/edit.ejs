@@ -1,0 +1,34 @@
+<h2>Car form</h2>
+<p>
+    <% if (car) { %>
+        New car
+    <% } else { %>
+        Edit car
+    <% } %>
+</p>
+<% if (flash) { %>
+    <p>{flash}</p>
+<% } %>
+<div class="content">
+    <div>
+        <form name="car" method="<% if (car) { %>put<% } else { %>post<% } %>"
+            action="/cars <% if (car) { %>/<%= car._id %><% } %>">
+            <div class="row">
+                <label>Color</label>
+                <input type="text" name="color" value="<%= car.color %>">
+            </div>
+            <div class="row">
+                <label>Model</label>
+                <input type="text" name="model" value="<%= car.model %>">
+            </div>
+            <div class="row controls">
+                <input type="submit" value="Save">
+            </div>
+        </form>
+        <% if (car) {%>
+            <form method="delete" action="/carss<%= car._id %>">
+                <input type="submit" value="Delete"/>
+            </form>
+        <% } %>
+    </div>
+</div>

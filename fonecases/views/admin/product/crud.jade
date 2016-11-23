@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  .box
+      .box-header
+        h3.box-title Application Buttons
+      .box-body
+        p.bulk-error
+        button.btn.btn-app(data-toggle="modal" data-target="#addkeywordsModal")
+          i.fa.fa-plus-circle
+          | Add
+  .box
+      .box-header
+        h3.box-title Application Buttons
+      .box-body
+        table.table.table-bordered.table-con#table_product
+          thead
+            tr
+              th
+                input(type="checkbox") 
+              th title
+              th description
+              th status
+              th actions            	
+          tfoot
+            tr
+              th
+                input(type="checkbox") 
+              th title
+              th description
+              th status 
+              th actions       

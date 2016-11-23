@@ -1,0 +1,578 @@
+doctype html
+html(lang='en')
+  // Mirrored from www.themesground.com/flipmart-demo/V2/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Nov 2016 08:49:12 GMT
+  head
+    // Meta
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='keywords', content='MediaCenter, Template, eCommerce')
+    meta(name='robots', content='all')
+    title Flipmart premium HTML5 & CSS3 Template
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='/assets/css/bootstrap.min.css')
+    // Customizable CSS
+    link(rel='stylesheet', href='/assets/css/main.css')
+    link(rel='stylesheet', href='/assets/css/blue.css')
+    link(rel='stylesheet', href='/assets/css/owl.carousel.css')
+    link(rel='stylesheet', href='/assets/css/owl.transitions.css')
+    link(rel='stylesheet', href='/assets/css/animate.min.css')
+    link(rel='stylesheet', href='/assets/css/rateit.css')
+    link(rel='stylesheet', href='/assets/css/bootstrap-select.min.css')
+    // Icons/Glyphs
+    link(rel='stylesheet', href='/assets/css/font-awesome.css')
+    // Fonts
+    link(href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+  body.cnt-home
+    // ============================================== HEADER ==============================================
+    header.header-style-1
+      // ============================================== TOP MENU ==============================================
+      .top-bar.animate-dropdown
+        .container
+          .header-top-inner
+            .cnt-account
+              ul.list-unstyled
+                li
+                  a(href='#')
+                    i.icon.fa.fa-user
+                    | My Account
+                li
+                  a(href='#')
+                    i.icon.fa.fa-heart
+                    | Wishlist
+                li
+                  a(href='#')
+                    i.icon.fa.fa-shopping-cart
+                    | My Cart
+                li
+                  a(href='#')
+                    i.icon.fa.fa-check
+                    | Checkout
+                li
+                  a(href='#')
+                    i.icon.fa.fa-lock
+                    | Login
+            // /.cnt-account
+            .cnt-block
+              ul.list-unstyled.list-inline
+                li.dropdown.dropdown-small
+                  a.dropdown-toggle(href='#', data-hover='dropdown', data-toggle='dropdown')
+                    span.value USD 
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') USD
+                    li
+                      a(href='#') INR
+                    li
+                      a(href='#') GBP
+                li.dropdown.dropdown-small
+                  a.dropdown-toggle(href='#', data-hover='dropdown', data-toggle='dropdown')
+                    span.value English 
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') English
+                    li
+                      a(href='#') French
+                    li
+                      a(href='#') German
+              // /.list-unstyled
+            // /.cnt-cart
+            .clearfix
+          // /.header-top-inner
+        // /.container
+      // /.header-top
+      // ============================================== TOP MENU : END ==============================================
+      .main-header
+        .container
+          .row
+            .col-xs-12.col-sm-12.col-md-3.logo-holder
+              // ============================================================= LOGO =============================================================
+              .logo
+                a(href='home.html')
+                  img(src='assets/images/logo.png', alt='')
+              // /.logo
+              // ============================================================= LOGO : END =============================================================
+            // /.logo-holder
+            .col-xs-12.col-sm-12.col-md-7.top-search-holder
+              // /.contact-row
+              // ============================================================= SEARCH AREA =============================================================
+              .search-area
+                form
+                  .control-group
+                    ul.categories-filter.animate-dropdown
+                      li.dropdown
+                        a.dropdown-toggle(data-toggle='dropdown', href='category.html')
+                          | Categories 
+                          b.caret
+                        ul.dropdown-menu(role='menu')
+                          li.menu-header Computer
+                          li(role='presentation')
+                            a(role='menuitem', tabindex='-1', href='category.html') - Clothing
+                          li(role='presentation')
+                            a(role='menuitem', tabindex='-1', href='category.html') - Electronics
+                          li(role='presentation')
+                            a(role='menuitem', tabindex='-1', href='category.html') - Shoes
+                          li(role='presentation')
+                            a(role='menuitem', tabindex='-1', href='category.html') - Watches
+                    input.search-field(placeholder='Search here...')
+                    a.search-button(href='#')
+              // /.search-area
+              // ============================================================= SEARCH AREA : END =============================================================
+            // /.top-search-holder
+            .col-xs-12.col-sm-12.col-md-2.animate-dropdown.top-cart-row
+              // ============================================================= SHOPPING CART DROPDOWN =============================================================
+              .dropdown.dropdown-cart
+                a.dropdown-toggle.lnk-cart(href='#', data-toggle='dropdown')
+                  .items-cart-inner
+                    .basket
+                      i.glyphicon.glyphicon-shopping-cart
+                    .basket-item-count
+                      span.count 2
+                    .total-price-basket
+                      span.lbl cart -
+                      span.total-price
+                        span.sign $
+                        span.value 600.00
+                ul.dropdown-menu
+                  li
+                    .cart-item.product-summary
+                      .row
+                        .col-xs-4
+                          .image
+                            a(href='detail.html')
+                              img(src='assets/images/cart.jpg', alt='')
+                        .col-xs-7
+                          h3.name
+                            a(href='index8a95.html?page-detail') Simple Product
+                          .price $600.00
+                        .col-xs-1.action
+                          a(href='#')
+                            i.fa.fa-trash
+                    // /.cart-item
+                    .clearfix
+                    hr
+                    .clearfix.cart-total
+                      .pull-right
+                        span.text Sub Total :
+                        span.price $600.00
+                      .clearfix
+                      a.btn.btn-upper.btn-primary.btn-block.m-t-20(href='checkout.html') Checkout
+                    // /.cart-total
+                // /.dropdown-menu
+              // /.dropdown-cart
+              // ============================================================= SHOPPING CART DROPDOWN : END=============================================================
+            // /.top-cart-row
+          // /.row
+        // /.container
+      // /.main-header
+      // ============================================== NAVBAR ==============================================
+      .header-nav.animate-dropdown
+        .container
+          .yamm.navbar.navbar-default(role='navigation')
+            .navbar-header
+              button.navbar-toggle.collapsed(data-target='#mc-horizontal-menu-collapse', data-toggle='collapse', type='button')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            .nav-bg-class
+              #mc-horizontal-menu-collapse.navbar-collapse.collapse
+                .nav-outer
+                  ul.nav.navbar-nav
+                    li.active.dropdown.yamm-fw
+                      a.dropdown-toggle(href='home.html', data-hover='dropdown', data-toggle='dropdown') Home
+                    li.dropdown.yamm.mega-menu
+                      a.dropdown-toggle(href='home.html', data-hover='dropdown', data-toggle='dropdown') Clothing
+                      ul.dropdown-menu.container
+                        li
+                          .yamm-content
+                            .row
+                              .col-xs-12.col-sm-6.col-md-2.col-menu
+                                h2.title Men
+                                ul.links
+                                  li
+                                    a(href='#') Dresses
+                                  li
+                                    a(href='#') Shoes 
+                                  li
+                                    a(href='#') Jackets
+                                  li
+                                    a(href='#') Sunglasses
+                                  li
+                                    a(href='#') Sport Wear
+                                  li
+                                    a(href='#') Blazers
+                                  li
+                                    a(href='#') Shirts
+                              // /.col
+                              .col-xs-12.col-sm-6.col-md-2.col-menu
+                                h2.title Women
+                                ul.links
+                                  li
+                                    a(href='#') Handbags
+                                  li
+                                    a(href='#') Jwellery
+                                  li
+                                    a(href='#') Swimwear 
+                                  li
+                                    a(href='#') Tops
+                                  li
+                                    a(href='#') Flats
+                                  li
+                                    a(href='#') Shoes
+                                  li
+                                    a(href='#') Winter Wear
+                              // /.col
+                              .col-xs-12.col-sm-6.col-md-2.col-menu
+                                h2.title Boys
+                                ul.links
+                                  li
+                                    a(href='#') Toys & Games
+                                  li
+                                    a(href='#') Jeans
+                                  li
+                                    a(href='#') Shirts
+                                  li
+                                    a(href='#') Shoes
+                                  li
+                                    a(href='#') School Bags
+                                  li
+                                    a(href='#') Lunch Box
+                                  li
+                                    a(href='#') Footwear
+                              // /.col
+                              .col-xs-12.col-sm-6.col-md-2.col-menu
+                                h2.title Girls
+                                ul.links
+                                  li
+                                    a(href='#') Sandals 
+                                  li
+                                    a(href='#') Shorts
+                                  li
+                                    a(href='#') Dresses
+                                  li
+                                    a(href='#') Jwellery
+                                  li
+                                    a(href='#') Bags
+                                  li
+                                    a(href='#') Night Dress
+                                  li
+                                    a(href='#') Swim Wear
+                              // /.col
+                              .col-xs-12.col-sm-6.col-md-4.col-menu.banner-image
+                                img.img-responsive(src='assets/images/banners/top-menu-banner.jpg', alt='')
+                              // /.yamm-content
+                    li.dropdown.mega-menu
+                      a.dropdown-toggle(href='category.html', data-hover='dropdown', data-toggle='dropdown')
+                        | Electronics
+                        span.menu-label.hot-menu.hidden-xs hot
+                      ul.dropdown-menu.container
+                        li
+                          .yamm-content
+                            .row
+                              .col-xs-12.col-sm-12.col-md-2.col-menu
+                                h2.title Laptops
+                                ul.links
+                                  li
+                                    a(href='#') Gaming
+                                  li
+                                    a(href='#') Laptop Skins
+                                  li
+                                    a(href='#') Apple
+                                  li
+                                    a(href='#') Dell
+                                  li
+                                    a(href='#') Lenovo
+                                  li
+                                    a(href='#') Microsoft
+                                  li
+                                    a(href='#') Asus
+                                  li
+                                    a(href='#') Adapters
+                                  li
+                                    a(href='#') Batteries
+                                  li
+                                    a(href='#') Cooling Pads
+                              // /.col
+                              .col-xs-12.col-sm-12.col-md-2.col-menu
+                                h2.title Desktops
+                                ul.links
+                                  li
+                                    a(href='#') Routers & Modems
+                                  li
+                                    a(href='#') CPUs, Processors
+                                  li
+                                    a(href='#') PC Gaming Store
+                                  li
+                                    a(href='#') Graphics Cards
+                                  li
+                                    a(href='#') Components
+                                  li
+                                    a(href='#') Webcam
+                                  li
+                                    a(href='#') Memory (RAM)
+                                  li
+                                    a(href='#') Motherboards
+                                  li
+                                    a(href='#') Keyboards
+                                  li
+                                    a(href='#') Headphones
+                              // /.col
+                              .col-xs-12.col-sm-12.col-md-2.col-menu
+                                h2.title Cameras
+                                ul.links
+                                  li
+                                    a(href='#') Accessories
+                                  li
+                                    a(href='#') Binoculars
+                                  li
+                                    a(href='#') Telescopes
+                                  li
+                                    a(href='#') Camcorders
+                                  li
+                                    a(href='#') Digital
+                                  li
+                                    a(href='#') Film Cameras
+                                  li
+                                    a(href='#') Flashes
+                                  li
+                                    a(href='#') Lenses
+                                  li
+                                    a(href='#') Surveillance
+                                  li
+                                    a(href='#') Tripods
+                              // /.col
+                              .col-xs-12.col-sm-12.col-md-2.col-menu
+                                h2.title Mobile Phones
+                                ul.links
+                                  li
+                                    a(href='#') Apple
+                                  li
+                                    a(href='#') Samsung
+                                  li
+                                    a(href='#') Lenovo
+                                  li
+                                    a(href='#') Motorola
+                                  li
+                                    a(href='#') LeEco
+                                  li
+                                    a(href='#') Asus
+                                  li
+                                    a(href='#') Acer
+                                  li
+                                    a(href='#') Accessories
+                                  li
+                                    a(href='#') Headphones
+                                  li
+                                    a(href='#') Memory Cards
+                              .col-xs-12.col-sm-12.col-md-4.col-menu.custom-banner
+                                a(href='#')
+                                  img(alt='', src='assets/images/banners/banner-side.png')
+                            // /.row
+                          // /.yamm-content
+                    li.dropdown.hidden-sm
+                      a(href='category.html')
+                        | Health & Beauty
+                        span.menu-label.new-menu.hidden-xs new
+                    li.dropdown.hidden-sm
+                      a(href='category.html') Watches
+                    li.dropdown
+                      a(href='contact.html') Jewellery
+                    li.dropdown
+                      a(href='contact.html') Shoes
+                    li.dropdown
+                      a(href='contact.html') Kids & Girls
+                    li.dropdown
+                      a.dropdown-toggle(href='#', data-hover='dropdown', data-toggle='dropdown') Pages
+                      ul.dropdown-menu.pages
+                        li
+                          .yamm-content
+                            .row
+                              .col-xs-12.col-menu
+                                ul.links
+                                  li
+                                    a(href='home.html') Home
+                                  li
+                                    a(href='category.html') Category
+                                  li
+                                    a(href='detail.html') Detail
+                                  li
+                                    a(href='shopping-cart.html') Shopping Cart Summary
+                                  li
+                                    a(href='checkout.html') Checkout
+                                  li
+                                    a(href='blog.html') Blog
+                                  li
+                                    a(href='blog-details.html') Blog Detail
+                                  li
+                                    a(href='contact.html') Contact
+                                  li
+                                    a(href='sign-in.html') Sign In
+                                  li
+                                    a(href='my-wishlist.html') Wishlist
+                                  li
+                                    a(href='terms-conditions.html') Terms and Condition
+                                  li
+                                    a(href='track-orders.html') Track Orders
+                                  li
+                                    a(href='product-comparison.html') Product-Comparison
+                                  li
+                                    a(href='faq.html') FAQ
+                                  li
+                                    a(href='404.html') 404
+                    li.dropdown.navbar-right.special-menu
+                      a(href='#') Todays offer
+                  // /.navbar-nav
+                  .clearfix
+                // /.nav-outer
+              // /.navbar-collapse
+            // /.nav-bg-class
+          // /.navbar-default
+        // /.container-class
+      // /.header-nav
+      // ============================================== NAVBAR : END ==============================================
+    // ============================================== HEADER : END ==============================================
+    block content
+        // ============================================================= FOOTER =============================================================
+    footer#footer.footer.color-bg
+      .footer-bottom
+        .container
+          .row
+            .col-xs-12.col-sm-6.col-md-3
+              .module-heading
+                h4.module-title Contact Us
+              // /.module-heading
+              .module-body
+                ul.toggle-footer(style='')
+                  li.media
+                    .pull-left
+                      span.icon.fa-stack.fa-lg
+                        i.fa.fa-map-marker.fa-stack-1x.fa-inverse
+                    .media-body
+                      p ThemesGround, 789 Main rd, Anytown, CA 12345 USA
+                  li.media
+                    .pull-left
+                      span.icon.fa-stack.fa-lg
+                        i.fa.fa-mobile.fa-stack-1x.fa-inverse
+                    .media-body
+                      p
+                        | +(888) 123-4567
+                        br
+                        | +(888) 456-7890
+                  li.media
+                    .pull-left
+                      span.icon.fa-stack.fa-lg
+                        i.fa.fa-envelope.fa-stack-1x.fa-inverse
+                    .media-body
+                      span
+                        a(href='#') flipmart@themesground.com
+              // /.module-body
+            // /.col
+            .col-xs-12.col-sm-6.col-md-3
+              .module-heading
+                h4.module-title Customer Service
+              // /.module-heading
+              .module-body
+                ul.list-unstyled
+                  li.first
+                    a(href='#', title='Contact us') My Account
+                  li
+                    a(href='#', title='About us') Order History
+                  li
+                    a(href='#', title='faq') FAQ
+                  li
+                    a(href='#', title='Popular Searches') Specials
+                  li.last
+                    a(href='#', title='Where is my order?') Help Center
+              // /.module-body
+            // /.col
+            .col-xs-12.col-sm-6.col-md-3
+              .module-heading
+                h4.module-title Corporation
+              // /.module-heading
+              .module-body
+                ul.list-unstyled
+                  li.first
+                    a(title='Your Account', href='#') About us
+                  li
+                    a(title='Information', href='#') Customer Service
+                  li
+                    a(title='Addresses', href='#') Company
+                  li
+                    a(title='Addresses', href='#') Investor Relations
+                  li.last
+                    a(title='Orders History', href='#') Advanced Search
+              // /.module-body
+            // /.col
+            .col-xs-12.col-sm-6.col-md-3
+              .module-heading
+                h4.module-title Why Choose Us
+              // /.module-heading
+              .module-body
+                ul.list-unstyled
+                  li.first
+                    a(href='#', title='About us') Shopping Guide
+                  li
+                    a(href='#', title='Blog') Blog
+                  li
+                    a(href='#', title='Company') Company
+                  li
+                    a(href='#', title='Investor Relations') Investor Relations
+                  li.last
+                    a(href='contact-us.html', title='Suppliers') Contact Us
+              // /.module-body
+      .copyright-bar
+        .container
+          .col-xs-12.col-sm-6.no-padding.social
+            ul.link
+              li.fb.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='Facebook')
+              li.tw.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='Twitter')
+              li.googleplus.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='GooglePlus')
+              li.rss.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='RSS')
+              li.pintrest.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='PInterest')
+              li.linkedin.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='Linkedin')
+              li.youtube.pull-left
+                a(target='_blank', rel='nofollow', href='#', title='Youtube')
+          .col-xs-12.col-sm-6.no-padding
+            .clearfix.payment-methods
+              ul
+                li
+                  img(src='assets/images/payments/1.png', alt='')
+                li
+                  img(src='assets/images/payments/2.png', alt='')
+                li
+                  img(src='assets/images/payments/3.png', alt='')
+                li
+                  img(src='assets/images/payments/4.png', alt='')
+                li
+                  img(src='assets/images/payments/5.png', alt='')
+            // /.payment-methods
+    // ============================================================= FOOTER : END=============================================================
+    // For demo purposes – can be removed on production
+    // For demo purposes – can be removed on production : End
+    // JavaScripts placed at the end of the document so the pages load faster
+    script(src='/assets/js/jquery-1.11.1.min.js')
+    script(src='/assets/js/bootstrap.min.js')
+    script(src='/assets/js/bootstrap-hover-dropdown.min.js')
+    script(src='/assets/js/owl.carousel.min.js')
+    script(src='/assets/js/echo.min.js')
+    script(src='/assets/js/jquery.easing-1.3.min.js')
+    script(src='/assets/js/bootstrap-slider.min.js')
+    script(src='/assets/js/jquery.rateit.min.js')
+    script(type='text/javascript', src='/assets/js/lightbox.min.js')
+    script(src='/assets/js/bootstrap-select.min.js')
+    script(src='/assets/js/wow.min.js')
+    script(src='/assets/js/scripts.js')
+  // Mirrored from www.themesground.com/flipmart-demo/V2/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Nov 2016 08:50:34 GMT

@@ -1,0 +1,208 @@
+﻿.body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#moredetailsModal .modal-dialog {
+  width: 80%;
+}
+
+table{
+  width: 100%!important;
+}
+
+.selectboxes {
+  display: inline !important;
+  width: 17% !important;
+}
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalajax {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/images/loader/al1.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalajax {
+    display: block;
+}
+
+td{
+  text-align: center;
+}
+
+th{
+  text-align: center!important;
+}
+
+.divastextarea
+{
+  background: white;
+  overflow: scroll;
+  height: 300px;
+  width: 400px;
+}
+
+.collapse_menu
+{
+  margin-left:-270px;
+  transition-duration:0.5s;
+}
+
+.container {
+   height: auto;
+   overflow: hidden;
+}
+
+.left {
+    width: 320px;
+    float: left;
+    background: #D9EDF7;
+    height: 100vh;
+    transition-duration:0.5s;
+}
+
+.right {
+    float: none; /* not needed, just for clarification */
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+}​​
+
+.nav-pills li > a {
+  color: black !important;
+}
+#select_host {
+  margin-left: 1%;
+  width: 17% !important;
+}
+table.dataTable thead th, table.dataTable thead td {
+  border-bottom:none !important;
+}
+table.dataTable tfoot th, table.dataTable tfoot td {
+  border-top: none !important;
+}
+.input-group.file-caption-main {
+  width: 20%;
+}
+
+.orderimage{
+  width: 50px;
+  height: 50px;
+}
+
+.skuimage{
+  width: 50px;
+  height: 50px;
+}
+
+.sidebar-menu, .main-sidebar .user-panel, .sidebar-menu > li.header {
+  overflow: visible!important;
+ 
+}
+.modalcaseserror
+{
+  color: red;
+}
+#mceu_11
+{
+  background-color: #00a65a !important;
+}
+#mceu_44
+{
+  background-color: #f39c12!important;
+}
+#mceu_77
+{
+  background-color: #605ca8 !important;
+}
+#mceu_110
+{
+  background-color: #39cccc !important;
+}
+.class_checkbox {
+  background-image: url("/images/checkbox/unchecked.png");
+  background-size: cover;
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  right: 25px;
+  width: 40px;
+}
+.class_checkbox.checked {
+  background-image: url("/images/checkbox/checked.png");
+
+  display: inline-block;
+}
+.btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-round.btn-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-round.btn-sm {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-round.btn-xs {
+    width: 24px;
+    height: 24px;
+}
+.selctalllabel
+{
+  float:right;
+}
+.loading-img{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+.loading-image-hidden{
+  display:none;
+}
+
+
+/*icon class */
+.backup-icon {
+  background-image: url("/img/icons.png");
+  background-position: 540px 2632px;
+  background-size: 633% auto;
+}
+/*icon class */
+
+/*.sidebar
+{
+  overflow-y: scroll!important;
+}*/
